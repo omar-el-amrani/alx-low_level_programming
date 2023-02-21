@@ -7,7 +7,8 @@
   */
 /*function declaration*/
 int print_Putchar(void);
-int main(void){
+int main(void)
+{
 	print_Putchar();
 	return (0);
 }
@@ -15,6 +16,6 @@ int main(void){
 /*function print _putchar*/
 int print_Putchar(void)
 {
-        printf("_putchar\n");
-        return (0);
+	printf("_putchar\n");
+	return (0);
 }
