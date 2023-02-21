@@ -7,11 +7,7 @@
   */
 /*function declaration*/
 int print_Putchar(void);
-int main(void)
-{
-	print_Putchar();
-	return (0);
-}
+
 
 /**
  * print_Putchar - print a sentence "_putchar"
