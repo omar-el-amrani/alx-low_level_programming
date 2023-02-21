@@ -5,12 +5,16 @@
   *
   * Return: always 0 (success)
   */
-int print_Putchar(void)
-{
-	printf("_putchar\n");   
-	return (0);
-}
-	int main(void){
+/*function declaration*/
+int print_Putchar(void);
+int main(void){
 	print_Putchar();
 	return (0);
+}
+
+/*function print _putchar*/
+int print_Putchar(void)
+{
+        printf("_putchar\n");
+        return (0);
 }
