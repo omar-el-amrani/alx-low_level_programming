@@ -1,4 +1,2 @@
-#test
-#include "_putchar.c"
-function_Putchar();
-
+#include " 0-putchar.c"
+print_Putchar();
