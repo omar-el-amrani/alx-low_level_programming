@@ -3,4 +3,6 @@
 
 #include"0-putchar.c"
 print_Putchar();
+#include "1-alphabet.c"
+print_alphabet();
 #endif
