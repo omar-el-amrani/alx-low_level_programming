@@ -5,14 +5,12 @@
   *
   * Return: always 0 (success)
   */
-int print_Putchar()
+int print_Putchar(void)
 {
-        printf("_putchar\n");
-   
-        return (0);
+	printf("_putchar\n");   
+	return (0);
 }
-int main(void){
-
+	int main(void){
 	print_Putchar();
 	return (0);
 }
