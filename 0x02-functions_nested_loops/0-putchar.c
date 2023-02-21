@@ -13,7 +13,9 @@ int main(void)
 	return (0);
 }
 
-/*function print _putchar*/
+/**
+ * function print _putchar
+ * */
 int print_Putchar(void)
 {
 	printf("_putchar\n");
