@@ -5,13 +5,14 @@ void print_alphabet(void);
 
 
 /**
- * print_alphabet - print all alphabet
+ * print_alphabet_x10 - print all alphabet
  * Return: always void
  */
 void print_alphabet_x10(void)
 {
 	int i;
-	for(i=0;i<9;i++)
+	
+	for( i = 0 ; i < 100 ; i++ )
 	{
 		printf("abcdefghijklmnopqrstuvwxyz\n");
 	}
