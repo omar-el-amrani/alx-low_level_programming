@@ -14,7 +14,7 @@ int main(void)
 }
 
 /**
- * function print _putchar
+ * print_Putchar - print a sentence "_putchar"
  */
 int print_Putchar(void)
 {
