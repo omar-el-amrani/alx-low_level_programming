@@ -15,7 +15,7 @@ int main(void)
 
 /**
  * function print _putchar
- * */
+ */
 int print_Putchar(void)
 {
 	printf("_putchar\n");
