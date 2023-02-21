@@ -1,8 +1,7 @@
 #ifndef MAIN_H_ 
 #define MAIN_H_
 
-#include"0-putchar.c"
-#include "1-alphabet.c"
-print_Putchar();
-print_alphabet();
+
+int print_Putchar(void);
+void print_alphabet(void);
 #endif
