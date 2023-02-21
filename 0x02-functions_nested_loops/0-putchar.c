@@ -15,6 +15,7 @@ int main(void)
 
 /**
  * print_Putchar - print a sentence "_putchar"
+ * Return: always 0 
  */
 int print_Putchar(void)
 {
