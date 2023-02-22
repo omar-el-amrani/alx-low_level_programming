@@ -1,19 +1,26 @@
 #include <stdio.h>
 
 /*function declaration*/
-int _isalpha(int c);
+int print_sign(int n);
 
 
 /**
- * _isalpha - check if char alphabet
- * @c: This is longer description of C
- * Return: return 1 if it alphabet and 0 if anything else
+ * print_sign - check if n is positif or negatif or zero
+ * @n: This is longer description of n
+ * Return: return 1 if it positif and 0 if zero and -1 if negatif
  */
-int _isalpha(int c)
+int print_sign(int n)
 {
-	if ( (65 <= c && 90 >= c ) || ( 97 <= c && 122 >= c) )
+	if ( 0 < n )
 	{
+		printf("+");
 		return (1);
+	}
+	else if ( 0 > n )
+	{
+		printf("-");
+		return (-1);
+	
 	}
 	return (0);
 }
