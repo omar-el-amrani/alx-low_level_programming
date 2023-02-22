@@ -11,9 +11,9 @@ int _islower(int c);
  */
 int _islower(int c)
 {
-	if (96 < c && 123 > c )
+	if (96 < c && 123 > c)
 	{
-		return(1);
+		return (1);
 	}
-	return(0);
+	return (0);
 }
