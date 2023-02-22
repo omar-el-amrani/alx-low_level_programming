@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include "main.h"
 /**
   * _putchar - function that prints one character
   * @n: a character that we want to print
