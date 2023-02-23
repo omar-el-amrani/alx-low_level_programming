@@ -4,7 +4,7 @@
 void print_to_98(int n);
 
 /**
- * jack_bauer - print hours and minutes
+ * print_to_98 - print hours and minutes
  * Return: return void
  * @n: num initial
  */
