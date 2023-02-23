@@ -12,9 +12,10 @@ void jack_bauer(void)
 {
 	int i = 0;
 	int j = 0;
-	while (23 >= i)
+
+	while (i <= 23)
 	{
-		while (59 >= j)
+		while (j <= 59)
 		{
 			printf("%02d:%02d\n", i, j);
 			j++;
