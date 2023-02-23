@@ -1,16 +1,25 @@
 #include <stdio.h>
 #include "main.h"
 /*function declaration*/
-int print_last_digit(int);
+void jack_bauer(void);
 
 
 /**
- * print_last_digit - get last digit
- * @n: This is longer description of n
- * Return: return last digit
+ * jack_bauer - print hours and minutes
+ * Return: return void
  */
-int print_last_digit(int n)
+void jack_bauer(void)
 {
-	return (n % 10);
-	_putchar(n % 10);
+	int i=0;
+	int j=0;
+	while (23 >= i)
+	{
+		while (59 >= j)
+		{
+			printf("%d:%d",i,j);
+			j++;
+		}
+		j=0;
+		i++;
+	}
 }
