@@ -10,16 +10,32 @@ void times_table(void);
  */
 void times_table(void)
 {
-	int i=0;
-	int j=0;
-	while (23 >= i)
+	int i = 0;
+	int j = 1;
+	int num = 0;
+
+	while (i <= 9)
 	{
-		while (59 >= j)
+		putchar('0');
+		putchar(',');
+		putchar(' ');
+		while (j <= 9)
 		{
-			printf("%02d:%02d\n",i,j);
+			num = i * j;
+			if ((num / 10) > 0)
+				putchar((num / 10) + '0');
+			else
+				putchar(' ');
+			putchar((num % 10) + '0');
+			if (j != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			j++;
 		}
-		j=0;
+		putchar('\n');
 		i++;
+		j = 1;
 	}
 }
