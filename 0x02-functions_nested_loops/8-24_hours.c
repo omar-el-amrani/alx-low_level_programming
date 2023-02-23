@@ -16,7 +16,7 @@ void jack_bauer(void)
 	{
 		while (59 >= j)
 		{
-			printf("%d:%d",i,j);
+			printf("%02d:%02d\n",i,j);
 			j++;
 		}
 		j=0;
