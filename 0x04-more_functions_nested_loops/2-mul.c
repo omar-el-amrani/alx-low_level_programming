@@ -1,15 +1,14 @@
 #include <stdio.h>
 /**
-  * _isdigit - checks if it is digit or not
+  * mul - multiplication of two numbers
   *
-  * @c: the char to be checked
+  * @a: the first number int
+  * @b: the second number int
   *
-  * Return: return 1 if it is digit and 0 if it isn't
+  * Return: return int mul
   */
 
-int _isdigit(int c)
+int mul(int a, int b)
 {
-	if (48 <= c && 57 >= c)
-		return (1);
-	return (0);
+	return (a * b);
 }
