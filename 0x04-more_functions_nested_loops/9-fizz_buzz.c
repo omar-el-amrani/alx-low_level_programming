@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * fizz_buzz - check the code
  *
- * Return: Always 0.
+ * Return: Always void.
  */
-int main(void)
+void fizz_buzz(void)
 {
 	int i;
 
@@ -27,5 +27,14 @@ int main(void)
 			printf("%d ", i);
 	}
 	printf("\n");
+}
+
+/**
+ * main - checker code
+ * Return: Always return 0.
+ */
+int main(void)
+{
+	fizz_buzz();
 	return (0);
 }
