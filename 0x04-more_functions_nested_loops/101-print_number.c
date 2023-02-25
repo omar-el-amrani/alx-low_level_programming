@@ -4,7 +4,8 @@
   * @n: this for n variable
   * Return: void
   */
-void pr_int(int n) {
+void print_number(int n)
+{
 	if (n < 0) {
 		putchar('-');
 		n = -n;
