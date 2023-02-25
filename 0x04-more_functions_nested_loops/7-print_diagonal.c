@@ -8,8 +8,8 @@ void print_diagonal(int n)
 {
 	int i;
 	int j;
-	
-	if (0 >= n)
+
+	if (n >= 0)
 		printf("\n");
 	for (i = 0; i < n; i++)
 	{
