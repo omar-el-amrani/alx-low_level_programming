@@ -11,7 +11,7 @@ void _puts(char *str)
 {
 	while (*str != '\0')
 	{
-		prinf("%c",*str);
+		printf("%c",*str);
 	}
 	printf("\n");
 }
