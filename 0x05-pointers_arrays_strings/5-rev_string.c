@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
   * rev_string - print rev str
   *
