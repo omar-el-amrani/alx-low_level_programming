@@ -9,15 +9,24 @@
 
 void rev_string(char *s)
 {
+	int len, count;
+	char strlocal;
+
+	len = 0;
+	count = 0;
 	while (*s != '\0')
 	{
+		len++;
 		s++;
 	}
-	s--;
-	while (*s != '\0')
+	len--;
+	while (len >= count)
 	{
-		printf("%c", *s);
-		s--;
+		strlocal = *(s + len);
+		*(s + len) = *(s + count);
+		*(s + count) = strlocal;
+		count++;
+		len--;
 	}
 	printf("\n");
 }
