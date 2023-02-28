@@ -2,7 +2,7 @@
 /**
   * puts2 - print str
   *
-  * @s: the first car
+  * @str: the first car
   *
   * Return: return void
   */
@@ -12,14 +12,14 @@ void puts2(char *str)
 	int count;
 
 	count = 0;
-	while (*s != '\0')
+	while (*str != '\0')
 	{
-		if (0 = count % 2)
+		if (0 = (count % 2))
 		{
-			printf("%c", *s);
+			printf("%c", *str);
 		}
 		count++;
-		s++;
+		str++;
 	}
 	printf("\n");
 }
