@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	while (*s != '\0')
 	{
-		if (count % 2 = 0)
+		if (0 = count % 2)
 			printf("%c", *s);
 		count++;
 		s++;
