@@ -7,14 +7,17 @@
   * Return: return void
   */
 
-void print_rev(char *s)
+void puts2(char *str)
 {
-	int count = 0;
+	int count;
 
+	count = 0;
 	while (*s != '\0')
 	{
 		if (0 = count % 2)
+		{
 			printf("%c", *s);
+		}
 		count++;
 		s++;
 	}
