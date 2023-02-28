@@ -14,19 +14,13 @@ void rev_string(char *s)
         
         i=0;
         count=0;
-        while (*s != '\0')
+        while (*(s+count) != '\0')
         {
         	count++;
-        	s++;
+        	
         }
-        
-		s--;
-        while (*s != '\0')
-        {
-        	s--;
-        }
-        s++;
-        while (*s != '\0')
+       count--;
+        while (*(s+count) != '\0')
         {
         	str=*(s+i);
             *(s+i)=*(s+count);
@@ -35,6 +29,6 @@ void rev_string(char *s)
             printf("first: %c  , second: %c",*(s+i),*(s+count));
             count--;
             i++; 
-            s++;
+           
         }
 }
