@@ -14,7 +14,7 @@ void puts2(char *str)
 	count = 0;
 	while (*str != '\0')
 	{
-		if (0 = (count % 2))
+		if (0 == (count % 2))
 		{
 			printf("%c", *str);
 		}
