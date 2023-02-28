@@ -9,29 +9,32 @@
 
 void rev_string(char *s)
 {
-	int count;
-
-	count=0;
-	while (*s != '\0')
-	{
-		count++;
-		s++;
-	}
-	char Strlocal[count];
-	s--;
-	count=0;
-	while (*s != '\0')
-	{
-		Strlocal[count]=*s;
-		count++;
-		s--; 
-	}
-	count=0;
-	while (*s != '\0')
-	{
-		*s=Strlocal[count];
-		count++;
-		s++; 
-	}
-	*s=Strlocal;
+	 int count,i;
+        char str;
+        
+        i=0;
+        count=0;
+        while (*s != '\0')
+        {
+        	count++;
+        	s++;
+        }
+        
+		s--;
+        while (*s != '\0')
+        {
+        	s--;
+        }
+        s++;
+        while (*s != '\0')
+        {
+        	str=*(s+i);
+            *(s+i)=*(s+count);
+            *(s+count)=str;
+        	
+            printf("first: %c  , second: %c",*(s+i),*(s+count));
+            count--;
+            i++; 
+            s++;
+        }
 }
