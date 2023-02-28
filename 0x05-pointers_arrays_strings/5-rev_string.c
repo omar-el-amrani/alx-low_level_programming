@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
   * rev_string - print rev str
   *
@@ -10,24 +9,29 @@
 
 void rev_string(char *s)
 {
-	int len, count;
-	char strlocal;
+	int count;
 
-	len = 0;
-	count = 0;
+	count=0;
 	while (*s != '\0')
 	{
-		len++;
+		count++;
 		s++;
 	}
-	len--;
-	while (len >= count)
+	char Strlocal[count];
+	s--;
+	count=0;
+	while (*s != '\0')
 	{
-		strlocal = *(s + len);
-		*(s + len) = *(s + count);
-		*(s + count) = strlocal;
+		Strlocal[count]=*s;
 		count++;
-		len--;
+		s--; 
 	}
-	printf("\n");
+	count=0;
+	while (*s != '\0')
+	{
+		*s=Strlocal[count];
+		count++;
+		s++; 
+	}
+	*s=Strlocal;
 }
