@@ -19,8 +19,7 @@ void rev_string(char *s)
         	count++;
         	
         }
-       count--;
-        while (*(s+i) != *(s + count))
+		while (i < (count / 2))
         {
         	str=*(s+i);
             *(s+i)=*(s+count);
