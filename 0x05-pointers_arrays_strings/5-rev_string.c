@@ -9,24 +9,23 @@
 
 void rev_string(char *s)
 {
-	 int count,i;
+	  int count,i;
         char str;
         
         i=0;
         count=0;
-        while (*(s+count) != '\0')
+        while (*(s+count) != ' ')
         {
         	count++;
         	
         }
        count--;
-        while (*(s+count) != '\0')
+        while (*(s+count) != ' ')
         {
         	str=*(s+i);
             *(s+i)=*(s+count);
             *(s+count)=str;
         	
-            printf("first: %c  , second: %c",*(s+i),*(s+count));
             count--;
             i++; 
            
