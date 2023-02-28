@@ -14,13 +14,13 @@ void rev_string(char *s)
         
         i=0;
         count=0;
-        while (*(s+count) != ' ')
+        while (*(s+count) != '\0')
         {
         	count++;
         	
         }
        count--;
-        while (*(s+count) != ' ')
+        while (*(s+i) != '\0')
         {
         	str=*(s+i);
             *(s+i)=*(s+count);
