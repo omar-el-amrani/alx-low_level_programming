@@ -9,7 +9,7 @@
 
 void puts_half(char *str)
 {
-	int len,half;
+	int len, half;
 
 	len = 0;
 	while (*(str + len) != '\0')
@@ -22,7 +22,7 @@ void puts_half(char *str)
 	len = 0;
 	while (*(str + len) != '\0')
 	{
-		if ( len >= half)
+		if (len >= half)
 			printf("%c", *(str + len));
 		len++;
 	}
