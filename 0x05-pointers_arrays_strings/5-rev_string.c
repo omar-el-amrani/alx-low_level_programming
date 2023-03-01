@@ -9,7 +9,7 @@
 
 void rev_string(char *s)
 {
-	  int count,i;
+	int count,i,half;
         char str;
         
         i=0;
@@ -19,11 +19,12 @@ void rev_string(char *s)
         	count++;
         	
         }
-		while (i < (count / 2))
+	half = count / 2;
+		while (i < half)
         {
-        	str=*(s+i);
-            *(s+i)=*(s+count);
-            *(s+count)=str;
+        	str=s[i];
+            s[i] = s[count];
+            s[count] = str;
         	
             count--;
             i++; 
