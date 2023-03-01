@@ -8,27 +8,19 @@
   */
 int _atoi(char *s)
 {
-	int i, j;
-	char *sumInt = s;
+	unsigned int num = 0;
+	int i = 0;
+	int sign = 1;
 
-	j = 0;
-	i = 0;
-	while (*(s + i) )
+	while (*(s + i))
 	{
-		printf("%c\n",s[i]);
-		if ((s[i] == 43 && s[i + 1] >= 48 && s[i + 1] <= 57) || (s[i] == 45 && s[i + 1] >= 48 && s[i + 1] <= 57) || (s[i] >= 48 && s[i] <= 57))
-		{
-			*(sumInt + j) = s[i];
-			j++;
-			printf("int:  %d\n",atoi(sumInt));
-		}
-		if (s[i] >= 48 && s[i] <= 57 && s[i+1] == 32)
-		{
-			printf("int:  %d\n",atoi(sumInt));
-			return (atoi(sumInt));
-		}
+		if (*(s + i) == '-')
+			sign *= -1;
+		else if (*(s + i) >= '0' && *(s + i) <= '9')
+			num = (num * 10) + (*(s + i) - '0');
+		else if (num > 0)
+			break;
 		i++;
 	}
-	printf("int:  %d\n",atoi(sumInt));
-	return (atoi(sumInt));
+	return (num * sign);
 }
