@@ -20,6 +20,7 @@ void rev_string(char *s)
         	
         }
 	half = count / 2;
+	count--;
 		while (i < half)
 	{
 		printf("in while this half: %d  and this count: %d and this is I: %d and this two char1: %c ,char2: %c",half,count,i,s[i],s[count]);
