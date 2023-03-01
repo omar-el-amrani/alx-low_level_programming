@@ -19,6 +19,7 @@ int _atoi(char *s)
 		{
 			*(sumInt + j) = s[i];
 			j++;
+			printf("int:  %d\n",atoi(sumInt));
 		}
 		if (s[i] >= 48 && s[i] <= 57 && s[i+1] == 32)
 		{
