@@ -22,9 +22,11 @@ int _atoi(char *s)
 		}
 		if (s[i] >= 48 && s[i] <= 57 && s[i+1] == ' ')
 		{
+			printf("int:  %d\n",atoi(sumInt));
 			return (atoi(sumInt));
 		}
 		i++;
 	}
+	printf("int:  %d\n",atoi(sumInt));
 	return (atoi(sumInt));
 }
