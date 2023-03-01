@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i, j;
-	char *sumInt;
+	char *sumInt = s;
 
 	j = 0;
 	i = 0;
