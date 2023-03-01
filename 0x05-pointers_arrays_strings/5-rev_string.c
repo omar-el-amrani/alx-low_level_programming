@@ -21,11 +21,11 @@ void rev_string(char *s)
         }
 	half = count / 2;
 		while (i < half)
-        {
-        	str=s[i];
-            s[i] = s[count];
-            s[count] = str;
-        	
+	{
+		printf("in while this half: %d  and this count: %d and this is I: %d and this two char1: %c ,char2:",half,count,i,s[i],s[count]);
+		str=s[i];
+		s[i] = s[count];
+            s[count] = str;	
             count--;
             i++; 
            
