@@ -10,10 +10,21 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
+	int j = 0;
 
-	while (i < n && *(src + i - 1) != '\0')
+	while (i < n)
 	{
-		*(dest + i) = *(src + i);
+		if (*(src + i) != '\0' && j == 0)
+		{
+			*(dest + i) = *(src + i);
+		}
+		else if (*(src + i) == '\0')
+		{
+			*(dest + i) = '\0';
+			j = 1;
+		}
+		else if (j == 1)
+			*(dest + i) = '\0';
 		i++;
 	}
 	return (dest);
