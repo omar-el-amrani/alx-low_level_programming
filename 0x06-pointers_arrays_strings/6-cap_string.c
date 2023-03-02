@@ -10,7 +10,7 @@ char *cap_string(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i) != '\0')
+		if (*(str + i + 1) != '\0')
 		{
 			if (*(str + i) == '\t' || *(str + i) == '\n' || *(str + i) == 44)
 			{
