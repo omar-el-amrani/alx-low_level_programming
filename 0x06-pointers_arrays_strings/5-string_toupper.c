@@ -5,10 +5,9 @@
   * @str: the first var
   * Return: return char
   */
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int i = 0;
-	int j = 0;
 
 	while (*(str + i) != '\0')
 	{
