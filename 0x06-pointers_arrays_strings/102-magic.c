@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main magic
- * Return : return int
+ * return : return int
  */
 int main(void)
 {
