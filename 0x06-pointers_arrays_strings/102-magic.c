@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - main magic
+ * Return : return int
+ */
 int main(void)
 {
 	int n;
