@@ -6,6 +6,8 @@
   */
 void print_number(int n)
 {
+	printf("%d",n);
+	/*
 	int i = 0;
 	int j = 0;
 	int k = 0;
@@ -43,5 +45,5 @@ void print_number(int n)
 	if (j > 0)
 		_putchar('0' + j);
 	if (i > 0)
-		_putchar('0' + i);
+		_putchar('0' + i);*/
 }
