@@ -14,7 +14,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		op *= -1;
 	}
 	if (op / 10 > 0)
@@ -37,24 +37,12 @@ void print_number(int n)
 		}
 	}
 	if (l > 0)
-	{
-		_putchar('0' + l);
-		_putchar('0' + k);
-		_putchar('0' + j);
-		_putchar('0' + i);
-	}
-	else if (k > 0)
-	{
-		_putchar('0' + k);
-		_putchar('0' + j);
-		_putchar('0' + i);
-	}
-	else if (j > 0)
-	{
-		_putchar('0' + j);
-		_putchar('0' + i);
-	}
-	else if (i > 0)
-		_putchar('0' + i);
+		putchar('0' + l);
+	if (k > 0)
+		putchar('0' + k);
+	if (j > 0)
+		putchar('0' + j);
+	if (i > 0)
+		putchar('0' + i);
 
 }
