@@ -18,9 +18,9 @@ char *_strchr(char *s, char c)
 		{
 			while (*(s + j) != '\0')
 			{
-				*(s + j) = *(s + i);
 				if (*(s + i) != '\0')
 				{
+					*(s + j) = *(s + i);
 					i++;
 				}
 				else
