@@ -7,8 +7,8 @@
   */
 char *_strchr(char *s, char c)
 {
-	int i;
-	int j;
+	int i , j;
+	char str[100];
 
 	j = 0;
 	i = 0;
@@ -18,23 +18,14 @@ char *_strchr(char *s, char c)
 		{
 			while (*(s + j) != '\0')
 			{
-				if (*(s + i) != '\0')
-				{
-					*(s + j) = *(s + i);
-					i++;
-				}
-				else
-				{
-					*(s + j) = '\0';
-				}
+				*(str + j)=*(s+i);
+				i++;
 				j++;
 			}
+			s=str;
 			return (s);
 		}
-		else
-		{
-			i++;
-		}
+		i++;
 	}
 	return (NULL);
 }
