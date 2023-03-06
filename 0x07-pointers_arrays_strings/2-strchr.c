@@ -8,9 +8,8 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
-	int j = 0;
-	char *lcl;
-
+	unsigned int j = 0;
+	
 	i = 0;
 	while (*(s + i) != '\0')
 	{
@@ -18,11 +17,12 @@ char *_strchr(char *s, char c)
 		{
 			while (*(s + i) != '\0')
 			{
-				*(lcl + j) = *(s + i);
+				*(s + j) = *(s + i);
 				j++;
 				i++;
 			}
-			return (lcl);
+			*(s + j) = *(s + i);
+			return (s);
 		}
 
 	}
