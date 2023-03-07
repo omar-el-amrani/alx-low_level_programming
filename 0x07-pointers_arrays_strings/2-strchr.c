@@ -7,7 +7,7 @@
   */
 char *_strchr(char *s, char c)
 {
-	int i , j;
+	int i, j;
 	char str[100];
 
 	j = 0;
@@ -18,11 +18,11 @@ char *_strchr(char *s, char c)
 		{
 			while (*(s + j) != '\0')
 			{
-				*(str + j)=*(s+i);
+				*(str + j) = *(s + i);
 				i++;
 				j++;
 			}
-			s=str;
+			s = str;
 			return (s);
 		}
 		i++;
