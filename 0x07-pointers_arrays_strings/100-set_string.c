@@ -1,31 +1,21 @@
 #include <stdio.h>
 /**
-  * print_diagsums - print diagsoms
-  * @a: the first var
-  * @size: the second var
+  * set_string - print diagsoms
+  * @s: the first var
+  * @to: the second var
   * Return: return void
   */
-void print_diagsums(int *a, int size)
+void set_string(char **s, char *to)
 {
-	int i, j, sum1, sum2;
+	int i;
 
-	j = 0;
 	i = 0;
-	sum1 = 0;
-	sum2 = 0;
-	while (i < size)
+	while (*(s + 1) != '\0')
 	{
-		sum1 += a[j];
-		j += (size + 1);
+		if (*(to + i) != '\0')
+			*(s + i) = *(to + i);
+		else
+			*(s + i) = '\0';
 		i++;
 	}
-	i--;
-	j = 0;
-	while (i >= 0)
-	{
-		j += (size - 1);
-		sum2 += a[j];
-		i--;
-	}
-	printf("%d, %d\n", sum1, sum2);
 }
