@@ -7,7 +7,7 @@
   */
 int len_str_omar(char *s)
 {
-	if (*(s + 0) =='\0')
+	if (*(s + 0) == '\0')
 	{
 		return (0);
 	}
