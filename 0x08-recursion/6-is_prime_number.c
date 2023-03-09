@@ -16,9 +16,9 @@ int _isprime_omar(int a, int b)
 	{
 		return (0);
 	}
-	else if ( a < b)
+	else if (a < b)
 	{
-		return (_isprime_omar(a+1, b));
+		return (_isprime_omar(a + 1, b));
 	}
 }
 /**
