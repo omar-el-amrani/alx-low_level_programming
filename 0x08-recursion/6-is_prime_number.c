@@ -20,6 +20,7 @@ int _isprime_omar(int a, int b)
 	{
 		return (_isprime_omar(a + 1, b));
 	}
+	return (0);
 }
 /**
  * is_prime_number - test if number is prime with function _isprime_omar
