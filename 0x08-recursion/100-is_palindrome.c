@@ -2,7 +2,7 @@
 #include "main.h"
 /**
   * len_str_omar - get length of a string
-  * @a: the first var
+  * @s: the first var
   * Return: return int
   */
 int len_str_omar(char *s)
@@ -35,7 +35,7 @@ int reverse_str_omar(int len, int i, char *s)
 /**
  * is_palindrome - check if the string is palindrome
  * @s: the first var
- * Return : return int 1 if it's palindrome and 0 if it isn't
+ * Return: return int 1 if it's palindrome and 0 if it isn't
  */
 int is_palindrome(char *s)
 {
